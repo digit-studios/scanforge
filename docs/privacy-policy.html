@@ -1,56 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - ScanForge</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScanForge — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #6200EA;
+      --primary-light: #9D46FF;
+      --bg: #0D0D0D;
+      --surface: #1A1A1A;
+      --text: #FFFFFF;
+      --text-secondary: #B0B0B0;
+      --text-hint: #606060;
+      --border: #2A2A2A;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-box {
+      width: 44px;
+      height: 44px;
+      background: var(--primary);
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-box svg { width: 26px; height: 26px; }
+
+    .brand { font-size: 20px; font-weight: 700; color: var(--text); }
+    .brand span { color: var(--primary-light); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-hint);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 36px 0 12px;
+      padding-left: 14px;
+      border-left: 3px solid var(--primary);
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 0 14px 0;
+      padding: 0;
+    }
+
+    ul li {
+      color: var(--text-secondary);
+      font-size: 15px;
+      padding: 5px 0 5px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary-light);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .card p { margin-bottom: 0; }
+
+    a { color: var(--primary-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-label { color: var(--text-hint); min-width: 80px; font-size: 13px; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-hint);
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>ScanForge - Privacy Policy</h1>
-        <nav>
-            <a href="index.html">Back to Home</a>
-        </nav>
-    </header>
-    <section id="privacy-content">
-        <h2>Privacy Policy</h2>
-        <p><strong>Last Updated:</strong> April 20, 2026</p>
 
-        <h3>1. Introduction</h3>
-        <p>ScanForge ("we," "us," or "our") operates the ScanForge mobile application. This Privacy Policy explains how we collect, use, disclose, and otherwise process information in connection with our app.</p>
+<header>
+  <div class="header-inner">
+    <div class="logo-box">
+      <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="80" y="80" width="120" height="20" rx="10" fill="white"/>
+        <rect x="80" y="80" width="20" height="120" rx="10" fill="white"/>
+        <rect x="312" y="80" width="120" height="20" rx="10" fill="white"/>
+        <rect x="412" y="80" width="20" height="120" rx="10" fill="white"/>
+        <rect x="80" y="412" width="120" height="20" rx="10" fill="white"/>
+        <rect x="80" y="312" width="20" height="120" rx="10" fill="white"/>
+        <rect x="312" y="412" width="120" height="20" rx="10" fill="white"/>
+        <rect x="412" y="312" width="20" height="120" rx="10" fill="white"/>
+        <rect x="110" y="246" width="292" height="20" rx="10" fill="white" opacity="0.9"/>
+      </svg>
+    </div>
+    <div class="brand">Scan<span>Forge</span></div>
+  </div>
+</header>
 
-        <h3>2. Information We Collect</h3>
-        <p>We collect information you provide directly to us, such as:</p>
-        <ul>
-            <li>Account information (name, email, password)</li>
-            <li>Documents and files you upload</li>
-            <li>Device information and usage data</li>
-        </ul>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: April 2026 &nbsp;·&nbsp; Digit Studios</p>
 
-        <h3>3. How We Use Your Information</h3>
-        <p>We use the information we collect to:</p>
-        <ul>
-            <li>Provide and maintain the app</li>
-            <li>Improve user experience</li>
-            <li>Communicate with you about updates and features</li>
-            <li>Comply with legal obligations</li>
-        </ul>
+  <div class="card">
+    <p>ScanForge is a free QR code and barcode scanner and generator for Android, developed by Digit Studios. We are committed to protecting your privacy. This policy explains what data the app collects, how it is used, and your rights.</p>
+  </div>
 
-        <h3>4. Data Security</h3>
-        <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+  <h2>Data we collect</h2>
+  <p>ScanForge is designed to work primarily offline with minimal data collection. Specifically:</p>
+  <ul>
+    <li><strong>Scan history and generated codes</strong> — stored locally on your device only, using Hive local database. We never upload your scan history to any server.</li>
+    <li><strong>Camera</strong> — used solely to scan QR codes and barcodes. Camera feed is processed on-device and never recorded, transmitted, or stored.</li>
+    <li><strong>URL safety checks</strong> — when you scan a URL, it may be sent to the Google Safe Browsing API to check for phishing or malware. This is an optional feature you can disable in Settings. Google's privacy policy applies to this check.</li>
+    <li><strong>Product lookups</strong> — when you look up a barcode product, the barcode number is sent to the OpenFoodFacts API (open source, public database). No personal data is sent.</li>
+  </ul>
 
-        <h3>5. Third-Party Services</h3>
-        <p>Our app may integrate with third-party services. We encourage you to review their privacy policies before using these services.</p>
+  <h2>Data we do NOT collect</h2>
+  <ul>
+    <li>We do not collect your name, email address, or any personally identifiable information.</li>
+    <li>We do not track your location.</li>
+    <li>We do not use analytics SDKs or advertising trackers in v1.0.</li>
+    <li>We do not share any data with third parties for advertising purposes.</li>
+    <li>We do not store scan history on any server — everything stays on your device.</li>
+  </ul>
 
-        <h3>6. Your Rights</h3>
-        <p>You have the right to access, correct, or delete your personal information. Contact us for assistance with these requests.</p>
+  <h2>Permissions used</h2>
+  <ul>
+    <li><strong>Camera</strong> — required to scan QR codes and barcodes.</li>
+    <li><strong>Vibrate</strong> — used to provide haptic feedback on a successful scan.</li>
+    <li><strong>Read media images</strong> — used only when you choose to scan a QR code from your gallery. The app reads only the image you select.</li>
+    <li><strong>Write external storage</strong> (Android 9 and below only) — used to save generated QR codes and barcodes to your gallery.</li>
+  </ul>
 
-        <h3>7. Contact Us</h3>
-        <p>If you have questions about this Privacy Policy, please contact us at support@scanforge.app</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 ScanForge. All rights reserved.</p>
-    </footer>
+  <h2>Third-party services</h2>
+  <p>ScanForge uses the following third-party services under certain conditions:</p>
+  <ul>
+    <li><strong>Google Safe Browsing API</strong> — for URL safety checks. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy →</a></li>
+    <li><strong>OpenFoodFacts</strong> — for product barcode lookups. <a href="https://world.openfoodfacts.org/privacy" target="_blank">OpenFoodFacts Privacy Policy →</a></li>
+  </ul>
+  <p>These services are only contacted when you explicitly trigger the relevant features. Neither service receives any personal identifying information from ScanForge.</p>
+
+  <h2>Future versions (v1.1+)</h2>
+  <p>Future versions of ScanForge may include Google AdMob for in-app advertising. When this is added, this privacy policy will be updated to reflect the data AdMob collects. You will be notified of any material changes via the app update notes on Google Play.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>All scan history and generated codes are stored locally on your device. You can delete this data at any time from <strong>Settings → Data → Clear History</strong>. Uninstalling the app removes all locally stored data.</p>
+
+  <h2>Children's privacy</h2>
+  <p>ScanForge is not directed at children under 13. We do not knowingly collect any data from children. If you believe your child has used the app and you have concerns, please contact us.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this privacy policy from time to time. When we do, we will update the "Last updated" date at the top of this page and note the changes in the app's Play Store update description. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact us</h2>
+  <div class="card">
+    <div class="contact-row">
+      <span class="contact-label">Developer</span>
+      <span>Digit Studios</span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">Email</span>
+      <a href="mailto:digitstudios.dev@gmail.com">digitstudios.dev@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">App</span>
+      <span>ScanForge — QR &amp; Barcode Scanner</span>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Digit Studios &nbsp;·&nbsp; ScanForge
+</footer>
+
 </body>
 </html>
